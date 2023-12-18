@@ -50,5 +50,3 @@ To demonstrate the algorithm for spike phase temporal precession, run spk\_phs\_
 ### To run the demo
 - Download all routines and data
 - In MATLAB, write spk\_phs\_spec\_demo
-### Demo results
-
