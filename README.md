@@ -1,4 +1,4 @@
-## **Overview**
+## **phasePrecession**
 
 This repository contains MATLAB routines used to calculate temporal phase precession by the spike phase spectrum method, described in Sloin et al., 2023, bioRxiv.
 ## **Overview**
