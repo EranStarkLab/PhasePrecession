@@ -30,10 +30,10 @@
 %                      pvals_ROI             pvalue of spectra amplitude in each frequency according to fp
 %                      sig_f                 frequencies with significant amplitude
 %
-% CALLS                resampleranges, inranges
+% CALLS                resampleranges, inranges, my_spectrum
 
 % written by           ES and HES  04-May-21
-% modified             HES       18-Dec-23
+% modified             HES         18-Dec-23
 
 
 function [ pow, fp, peak, pvals, sig_f, nspk ] = spike_spectra( spk, periods, varargin )
@@ -121,13 +121,13 @@ end
 switch method 
     case 'mt'
      cxx                        = local_mtcsd1( vec, nFFT, Fs, nWindow, nWindow / 2, NW, dflag );
-     pow0                         = cxx( :, 1, 1 );
+     pow0                       = cxx( :, 1, 1 );
     case 'welch'
-      pow0                        = my_spectrum( vec, nFFT, Fs, nFFT, nFFT / 2, 'none' );
+      pow0                      = my_spectrum( vec, nFFT, Fs, nFFT, nFFT / 2, 'none' );
 end
 
 % find hfp amplitude for normalization
-hidx                           = (fp0 >= fHiROI(1) ) & (fp0 <= fHiROI(2) );
+hidx                            = (fp0 >= fHiROI(1) ) & (fp0 <= fHiROI(2) );
 hfp                             = nanmean( pow0( hidx ) );
 peak(4)                         = hfp;
 
