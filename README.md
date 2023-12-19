@@ -3,7 +3,7 @@
 This repository contains MATLAB routines used to calculate temporal phase precession by the spike phase spectrum method, described in [Sloin et al., 2023](https://www.biorxiv.org/content/10.1101/2023.08.19.553985v1).
 ## **Overview**
 The spike phase temporal precession algorithm described by [Sloin et al. (2023)](https://www.biorxiv.org/content/10.1101/2023.08.19.553985v1) is designed to detect and quantify temporal phase precession of spikes. The approach minizes (1) false detections, created by phase locking; and (2) misses (false negatives) created by units that exhibit both phase locking and phase precession. 
-The core algorithm is implemented by the MATLAB routine **spk\_phs\_spec.m**. All the sub-routines necessary for spk\_phs\_spec.m are included in the **Analysis** and **Utilities** folders. A demo, **spk\_phs\_spec\_demo.m**, is available. 
+The core algorithm is implemented by the MATLAB routine **spk\_phs\_spec.m**. All the sub-routines necessary for spk\_phs\_spec.m are included in the **Analysis** and **Utilities** folders.
 ## **Code**
 ### **Analysis**
 - calc\_cycle.m
