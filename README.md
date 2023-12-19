@@ -39,9 +39,9 @@ The core algorithm is implemented by the MATLAB routine **spk\_phs\_spec.m**. Al
 The sample data are used to demonstrate the calculation of spike phase spectra and deriving quatification and statistical significance. The data include spike trains and theta phases corresponding to three well-isolated pyramidal cells recorded from hippocampal region CA1 of freely-moving mice. The same examples are described in [Fig. S2](https://www.biorxiv.org/content/biorxiv/early/2023/08/21/2023.08.19.553985/F7.large.jpg) of [Sloin et al., 2023](https://www.biorxiv.org/content/10.1101/2023.08.19.553985v1). One example unit exhibits phase precession (1\_precession\_only.mat; Fig. S2A), a second unit exhibits phase locking (2\_lock only.mat; Fig. S2B), and a third exhibits both phase locking and phase precession (3\_precession\_lock.mat; Fig. S2C). 
 
 In all cases, the *.mat file contains three variables, all sampled at 1250 Hz:
-  - spk: Spike times
+  - spk: spike times
   - phs: LFP theta theta phases in radians
-  - periods: Start and end time of every crossing of the unit’s place field
+  - periods: start and end time of every crossing of the unit’s place field
 
 The data are available at [Zenodo](https://doi.org/10.5281/zenodo.10405019).
 
