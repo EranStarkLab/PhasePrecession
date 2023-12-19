@@ -1,8 +1,8 @@
 ## **PhasePrecession**
 
-This repository contains MATLAB routines used to calculate temporal phase precession by the spike phase spectrum method, described in Sloin et al., 2023, bioRxiv.
+This repository contains MATLAB routines used to calculate temporal phase precession by the spike phase spectrum method, described in [Sloin et al., 2023](https://www.biorxiv.org/content/10.1101/2023.08.19.553985v1).
 ## **Overview**
-The spike phase temporal precession algorithm described by Sloin et al. (2023) is designed to detect and quantify temporal phase precession of spikes. The approach minizes (1) false detections, created by phase locking; and (2) misses (false negatives) created by units that exhibit both phase locking and phase precession. The core algorithm is implemented by the MATLAB routine **spk\_phs\_spec.m**.
+The spike phase temporal precession algorithm described by [Sloin et al. (2023)](https://www.biorxiv.org/content/10.1101/2023.08.19.553985v1) is designed to detect and quantify temporal phase precession of spikes. The approach minizes (1) false detections, created by phase locking; and (2) misses (false negatives) created by units that exhibit both phase locking and phase precession. The core algorithm is implemented by the MATLAB routine **spk\_phs\_spec.m**.
 
 All the sub-routines necessary for spk\_phs\_spec.m are included in the **Analysis** and **Utilities** folders. In addition, the MATLAB deep learning toolbox is necessary for running the routines. Finally, a demo, **spk\_phs\_spec\_demo.m**, is available. 
 ## **Code**
@@ -34,7 +34,7 @@ All the sub-routines necessary for spk\_phs\_spec.m are included in the **Analys
   - to be a set of non-overlapping [ small large ] pairs
 
 ## **Data**
-The sample data are used to demonstrate the calculation of spike phase spectra and deriving quatification and statistical significance. The data include spike trains and theta phases corresponding to three well-isolated pyramidal cells recorded from hippocampal region CA1 of freely-moving mice. The same examples are described in Sloin et al., 2023, bioRxiv, Fig. S2. One example unit exhibits phase precession (1\_precession\_only.mat; Fig. S2A), a second unit exhibits phase locking (2\_lock only.mat; Fig. S2B), and a third exhibits both phase locking and phase precession (3\_precession\_lock.mat; Fig. S2C). 
+The sample data are used to demonstrate the calculation of spike phase spectra and deriving quatification and statistical significance. The data include spike trains and theta phases corresponding to three well-isolated pyramidal cells recorded from hippocampal region CA1 of freely-moving mice. The same examples are described in [Fig. S2](https://www.biorxiv.org/content/biorxiv/early/2023/08/21/2023.08.19.553985/F7.large.jpg) of [Sloin et al., 2023](https://www.biorxiv.org/content/10.1101/2023.08.19.553985v1). One example unit exhibits phase precession (1\_precession\_only.mat; Fig. S2A), a second unit exhibits phase locking (2\_lock only.mat; Fig. S2B), and a third exhibits both phase locking and phase precession (3\_precession\_lock.mat; Fig. S2C). 
 
 In all cases, the *.mat file contains three variables, all sampled at 1250 Hz:
   - spk: Spike times
