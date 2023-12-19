@@ -2,37 +2,38 @@
 
 This repository contains MATLAB routines used to calculate temporal phase precession by the spike phase spectrum method, described in Sloin et al., 2023, bioRxiv.
 ## **Overview**
-The spike phase temporal precession algorithm described by Sloin et al was designed to statistically detect and describe temporal precession. The current method allows to reduce false positives created by phase lock and false negatives created by units exhibiting both phase lock.  The core algorithm is implemented by the MATLAB routine spk\_phs\_spec.m
+The spike phase temporal precession algorithm described by Sloin et al. (2023) is designed to detect and quantify temporal phase precession of spikes. The approach minizes (1) false detections, created by phase locking; and (2) misses (false negatives) created by units that exhibit both phase locking and phase precession. The core algorithm is implemented by the MATLAB routine spk\_phs\_spec.m
 
-All the routines necessary for spk\_phs\_spec.m are included in the functions folder. In addition, the MATLAB deep learning toolbox is necessary for running the routines.
+All the routines necessary for spk\_phs\_spec.m are included in the **Utilities** folder. In addition, the MATLAB deep learning toolbox is necessary for running the routines.
+## **Code**
 ### **Analysis**
-- spk\_phs\_spec.m
-  - computes spike phase spectrum and indicate the occurrence of temporal precession
 - calc\_cycle.m
   - generates a vector of theta cycle from a theta phase vector
 - RandCyclePhs.m
   - randomize the phase of spikes 
 - spike\_spectra.m
-  - wrapper for calculating the spectrum of spike phase
+  - calculates the spectrum of spike phases
+- spk\_phs\_spec.m
+  - computes spike phase spectrum and indicates the occurrence of temporal precession
 ### **Utilities**
-- ParseArgPairs
-  - flexible argument assigning
 - inranges
   - determine which elements of a vector are in which range
-- myjet
-  - modified jet with extreme values in pure R,B
-- sortranges
-  - to be a set of non-overlapping [ small large ] pairs
 - mixmat
   - mix matrix elements
 - my\_spectrum
   - Welch spectrum for multiple signals. 
+- myjet
+  - modified jet with extreme values in pure R,B
+- ParseArgPairs
+  - flexible argument assigning
 - resampleranges
   - resample ranges from one Fs to another, while keeping the total duration fixed
 - resort
   - indices to recover original order
+- sortranges
+  - to be a set of non-overlapping [ small large ] pairs
 
-**Data**
+## **Data**
 
 - 1\_precession\_only.mat
   - spk: Spike time of an example unit exhibiting theta phase precession (same as Sloin et al., 2023, Fig. S9A). 
