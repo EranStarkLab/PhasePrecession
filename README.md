@@ -50,7 +50,7 @@ To demonstrate the algorithm for spike phase temporal precession, run spk\_phs\_
 - Download the data from zenodo
 - In MATLAB, write spk\_phs\_spec\_demo
 
-### Demo results
+  ## **Demo results** 
 ### Precession only
 ![Precession only](sloin2023_demo1.png)
 ### Phase locking only
