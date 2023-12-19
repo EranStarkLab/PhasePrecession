@@ -23,7 +23,7 @@ The core algorithm is implemented by the MATLAB routine **spk\_phs\_spec.m**. Al
 - mixmat
   - mix matrix elements
 - my\_spectrum
-  - Welch spectrum for multiple signals. 
+  - Welch spectrum for multiple signals
 - myjet
   - modified jet with extreme values in pure R,B
 - ParseArgPairs
