@@ -43,7 +43,7 @@ In all cases, the *.mat file contains three variables, all sampled at 1250 Hz:
   - phs: LFP theta theta phases in radians
   - periods: Start and end time of every crossing of the unit’s place field
 
-The data are available at [Zenodo].
+The data are available at Zenodo.
 
   ## **Demo** 
 The routine spk\_phs\_spec\_demo.m demonstrates the calculation of spike phase spectra by using data from three example units recorded from hippocampal region CA1 of freely-moving mice. One example unit exhibits phase locking, a second unit exhibits phase precession, and a third exhibits both phase locking and phase precession. The same examples are described in Sloin et al., 2023, bioRxiv, Fig. S2.
@@ -51,7 +51,7 @@ The routine spk\_phs\_spec\_demo.m demonstrates the calculation of spike phase s
 To demonstrate the algorithm for spike phase temporal precession, run spk\_phs\_spec\_demo.m. To run spk\_phs\_spec\_demo.m, you will need the following: 
 ### To run the demo
 - Download all routines from this repository
-- Download the data from zenodo
+- Download the data from Zenodo
 - In MATLAB, write spk\_phs\_spec\_demo
 
   ## **Demo results** 
